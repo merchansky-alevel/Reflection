@@ -38,6 +38,7 @@ namespace ReflectionHomework
         {
             string Key = type.Name.ToString();
             string Value = "";
+
             StringBuilder updatedValue = new StringBuilder(Value);
 
             var fields = type.GetFields(BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.Public | BindingFlags.DeclaredOnly);
